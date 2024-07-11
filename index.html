@@ -34,34 +34,39 @@
     <link href="./index2.css" rel="stylesheet" />
     <style>
       .video-container {
-      position: relative;
-      width: 100%;
-      height: 100vh; /* Full screen height */
-      overflow: hidden;
-    }
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Full screen height */
+        overflow: hidden;
+      }
 
-    .video-container video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Ensure video covers the entire container */
-    }
+      .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure video covers the entire container */
+      }
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5); /* Optional: dark overlay on the video */
-    }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Optional: dark overlay on the video */
+      }
 
-    .navbar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000; /* Ensure navbar is on top of the video */
-    }
+      .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000; /* Ensure navbar is on top of the video */
+      }
     </style>
     <link
       rel="stylesheet"
@@ -87,7 +92,6 @@
         <div class="video-container">
           <video autoplay muted loop>
             <source src="./1080.mp4" type="video/mp4" />
-            <!-- Add other video sources (WebM, Ogg) for compatibility -->
             Your browser does not support the video tag.
           </video>
           <div class="overlay">
@@ -98,83 +102,95 @@
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
           <div class="container-fluid">
-            <a class="navbar-brand navbar-rand brand" style="font-style: italic;" href="#">
-              <img src="./companylogo - Copy.png" alt="SpeedyByte Logo" height="35" />
+            <a
+              class="navbar-brand navbar-rand brand"
+              style="font-style: italic"
+              href="#"
+            >
+              <img
+                src="./companylogo - Copy.png"
+                alt="SpeedyByte Logo"
+                height="35"
+              />
               SPEEDYBYTE
             </a>
-            <button class="navbar-toggler bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button
+              class="navbar-toggler bg-black"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link text-light font-weight-bold" aria-current="page" href="#Product-services">Products</a>
+                  <a
+                    class="nav-link text-light font-weight-bold"
+                    aria-current="page"
+                    href="#Product-services"
+                    >Products</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light font-weight-bold" href="#about-us">About Us</a>
+                  <a
+                    class="nav-link text-light font-weight-bold"
+                    href="#about-us"
+                    >About Us</a
+                  >
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-light font-weight-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a
+                    class="nav-link dropdown-toggle text-light font-weight-bold"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     More
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#career">Career</a></li>
                     <li>
-                      <a class="dropdown-item dropdown-link-hover-color" href="https://play.google.com/store/apps/details?id=com.speedybyte.walkthru" target="_blank" rel="noreferrer noopener">Download the App</a>
+                      <a
+                        class="dropdown-item dropdown-link-hover-color"
+                        href="https://play.google.com/store/apps/details?id=com.speedybyte.walkthru"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        >Download the App</a
+                      >
                     </li>
                     <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <button class="dropdown-item dropdown-link-hover-color text-red" id="myButton">
+                      <button
+                        class="dropdown-item dropdown-link-hover-color text-red"
+                        id="myButton"
+                      >
                         Delete WalkThru Account
                       </button>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light font-weight-bold" href="#contact-us">Contact Us</a>
+                  <a
+                    class="nav-link text-light font-weight-bold"
+                    href="#contact-us"
+                    >Contact Us</a
+                  >
                 </li>
-                
               </ul>
             </div>
           </div>
         </nav>
       </header>
     </div>
-
-    <!-- <nav class="navbar navbar-expand-lg bg-black">
-        <div class="container-fluid">
-          <a class="navbar-brand navbar-rand text-light" href="#"><img src="./companylogo - Copy.png" alt="speedybyte brand icon" height="35"> SpeedyByte</a>
-          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item pl-5 pr-5">
-                <a class="nav-link active text-light" aria-current="page" href="#Product-services">PRODUCTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-light pl-5 pr-5" href="#about-us">ABOUT US</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active pl-5 pr-5 text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  MORE
-                </a>
-                <ul class="dropdown-menu bg-black">
-                  <li><a class="dropdown-item dropdown-link-hover-color text-light" href="#contact-us">CONTACT US</a></li>
-                  <li><a class="dropdown-item dropdown-link-hover-color text-light" href="https://play.google.com/store/apps/details?id=com.speedybyte.walkthru" target="_blank" rel="noreferrer noopener">DOWNLOAD THE APP</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><button class="dropdown-item dropdown-link-hover-color text-red" id="myButton">DELETE WALKTHRU ACCOUNT</button>
-                </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav> -->
-
     <div id="myPopup" class="popup">
       <div class="popup-content">
         <h3 class="navbar-rand2 text-dark">
@@ -194,29 +210,6 @@
         <button id="closePopup">Close</button>
       </div>
     </div>
-
-    <!-- <div class="container border-bottom border border-5 rounded-top rounded-bottom border-success" id="Product-services">
-        <h1 class="col-md-12 text-center gamja-flower-regular">WALKTHRU</h1>
-        <br><br><br>
-        <div class="row">
-          <div class="col-md-6 centered-img">
-            <img src="./GREEN_BACKGROUND_ROUND_SQUARE.png" alt="logo walkthru" class="the-real-logo">
-          </div>
-          <div class="col-md-6">
-            <h4>The ultimate closed campus takeaway and delivery app.</h4>
-            <p>
-              <span id="dots">Welcome to the ultimate closed campus takeaway and delivery app, your one-stop solution for all cravings and essentials! Whether it's a hunger pang, thirst quench, or urgent need, our platform connects you seamlessly to nearby shops within your vicinity. With just a few taps, you can explore a plethora of options, order food from your favorite restaurants, or snag essential items from local stores. What sets us apart? We offer two convenient modes: opt for takeaway when your order is packed and ready or sit back and relax as our dedicated delivery team ensures your goodies reach your doorstep promptly 🛍️ But...</span>
-              <span id="more"> <br><br>
-                wait, there's more! We're not just about convenience for consumers; we're equally committed to enhancing the operations for shop owners and delivery drivers. Our app provides an efficient interface for shop owners, streamlining their order management and sales tracking processes. With features tailored for their needs, managing orders and tracking sales becomes a breeze. And that's not all—our latest tech soundbox integration takes efficiency to the next level. Shop owners can now receive order notifications audibly, making sure no order goes unnoticed, while also streamlining the payment process for seamless transactions. 🛒📊🔊 <br><br>
-                But we don't stop there. As we embrace the future, we're excited to introduce our upcoming features: robotic and drone delivery services. Imagine the thrill of your order being swiftly whisked to you by a friendly robot or soaring drone! While these cutting-edge features are still in the works, our commitment to innovation and efficiency never wavers 🤖🚁 <br><br>
-                So, whether you're a student burning the midnight oil, a busy professional with no time to spare, a shop owner looking to streamline operations, or a delivery driver seeking a more efficient platform, count on us to fulfill your needs with ease.
-              </span>
-            </p>
-            <button onclick="myFunction()" id="myBtn" class="btn btn-primary">Read more</button>
-          </div>
-        </div>
-      </div> -->
-
     <div
       class="container marketing mt-5 mb-5 text-center"
       id="Product-services"
@@ -277,19 +270,21 @@
     </div>
 
     <div class="container marketing">
-      <br><br>
+      <br /><br />
       <hr class="featurette-divider" />
       <div class="row featurette text-center">
         <div class="col-md-7">
           <h2 class="featurette-heading">
-            First featurette heading.
-            <span class="text-muted">It'll blow your mind.</span>
+            The Prototype
+            <span class="text-muted"></span>
           </h2>
           <p class="lead">
-            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-            ligula porta felis euismod semper. Praesent commodo cursus magna,
-            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.
+            Autobot's first successful mini prototype is now operational,
+            showcasing advanced capabilities in industrial navigation,
+            sophisticated path planning, and cutting-edge robotics algorithms.
+            This breakthrough marks a significant milestone in our journey,
+            demonstrating the potential of Autobot to revolutionize autonomous
+            delivery systems with precision and efficiency.
           </p>
         </div>
         <div class="col-md-5">
@@ -297,9 +292,9 @@
             class="featurette-image img-fluid mx-auto"
             data-src="holder.js/500x500/auto"
             alt="500x500"
-            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1909dbd328b%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1909dbd328b%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.125%22%20y%3D%22261.2800006866455%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+            src="./bot_image.png"
             data-holder-rendered="true"
-            style="width: 300px; height: 300px"
+            style="width: 300px; height: auto"
           />
         </div>
       </div>
@@ -309,14 +304,18 @@
       <div class="row featurette text-center">
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading">
-            Oh yeah, it's that good.
-            <span class="text-muted">See for yourself.</span>
+            Electronics Architcture
+            <span class="text-muted"></span>
           </h2>
           <p class="lead">
-            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-            ligula porta felis euismod semper. Praesent commodo cursus magna,
-            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.
+            The electronics architecture of Autobot showcases our innovative
+            approach. At its core is a powerful onboard computer that processes
+            inputs from LIDAR, ultrasonic, and infrared sensors to create a
+            detailed map of its surroundings. Advanced machine learning
+            algorithms enable real-time decision-making and navigation through
+            complex environments. Supported by ROS, Autobot adapts to dynamic
+            conditions, ensuring exceptional performance in diverse
+            industrial settings.
           </p>
         </div>
         <div class="col-md-5 order-md-1">
@@ -324,9 +323,9 @@
             class="featurette-image img-fluid mx-auto"
             data-src="holder.js/500x500/auto"
             alt="500x500"
-            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1909dbd328d%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1909dbd328d%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.125%22%20y%3D%22261.2800006866455%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+            src="./bot circuit.png"
             data-holder-rendered="true"
-            style="width: 300px; height: 300px"
+            style="width: 300px; height: auto"
           />
         </div>
       </div>
@@ -336,13 +335,12 @@
       <div class="row featurette text-center">
         <div class="col-md-7">
           <h2 class="featurette-heading">
-            And lastly, this one. <span class="text-muted">Checkmate.</span>
+            Robot Software <span class="text-muted"></span>
           </h2>
           <p class="lead">
-            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-            ligula porta felis euismod semper. Praesent commodo cursus magna,
-            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.
+            Our custom-developed Windows software provides easy debugging and
+            control over Autobot, enhancing user experience and
+            operational efficiency.
           </p>
         </div>
         <div class="col-md-5">
@@ -350,9 +348,9 @@
             class="featurette-image img-fluid mx-auto"
             data-src="holder.js/500x500/auto"
             alt="500x500"
-            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1909dbd328e%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1909dbd328e%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.125%22%20y%3D%22261.2800006866455%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+            src="./BOT_CONTROL_SOFTWARE.png"
             data-holder-rendered="true"
-            style="width: 300px; height: 300px"
+            style="width: 300px; height: auto"
           />
         </div>
       </div>
@@ -495,10 +493,7 @@
                 height="140"
               />
               <h4>Shubham Choudhary</h4>
-              <p>
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
-              </p>
+              <p>(CEO)</p>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
@@ -510,10 +505,7 @@
                 height="140"
               />
               <h4>Mahir Kumar</h4>
-              <p>
-                Another exciting bit of representative placeholder content. This
-                time, we've moved on to the second column.
-              </p>
+              <p>(CMO)</p>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
@@ -525,10 +517,7 @@
                 height="140"
               />
               <h4>Ujjwal Rai</h4>
-              <p>
-                And lastly this, the third column of representative placeholder
-                content.
-              </p>
+              <p>(COO)</p>
             </div>
             <!-- /.col-lg-4 -->
           </div>
