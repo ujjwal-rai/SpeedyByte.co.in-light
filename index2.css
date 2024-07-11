@@ -267,11 +267,6 @@ html {
   border: none;
 }
 
-#myBtn2 {
-  background: none;
-  color: #328a68;
-  border: none;
-}
 
 #more {
   display: none;
@@ -313,7 +308,7 @@ html {
 }
 
 .color-yaad {
-  background-color: #328a68;
+  background-color: #2c6ff7;
 }
 
 @keyframes fadeIn {
