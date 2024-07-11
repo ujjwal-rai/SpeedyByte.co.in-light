@@ -32,6 +32,37 @@
       crossorigin="anonymous"
     />
     <link href="./index2.css" rel="stylesheet" />
+    <style>
+      .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Full screen height */
+      overflow: hidden;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure video covers the entire container */
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Optional: dark overlay on the video */
+    }
+
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000; /* Ensure navbar is on top of the video */
+    }
+    </style>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
@@ -50,81 +81,53 @@
     />
   </head>
 
-  <body class="text-bg-dark text-dark" style="--bs-bg-opacity: 0.5">
+  <body class="text-bg-dark text-dark" style="--bs-bg-opacity: 0">
     <div class="text-center">
       <header>
-        <nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-75">
+        <div class="video-container">
+          <video autoplay muted loop>
+            <source src="./1080.mp4" type="video/mp4" />
+            <!-- Add other video sources (WebM, Ogg) for compatibility -->
+            Your browser does not support the video tag.
+          </video>
+          <div class="overlay">
+            <!-- <h1 class="navbar-rand">
+              FROM BYTES TO BITES DELIVERED RIGHT, FAST AND FRESH IN YOUR SIGHT
+            </h1> -->
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-10">
           <div class="container-fluid">
-            <a class="navbar-brand navbar-rand" href="#"
-              ><img
-                src="./companylogo - Copy.png"
-                alt="SpeedyByte Logo"
-                height="35"
-              />
-              SPEEDYBYTE</a
-            >
-            <button
-              class="navbar-toggler bg-white"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <a class="navbar-brand navbar-rand brand" style="font-style: italic;" href="#">
+              <img src="./companylogo - Copy.png" alt="SpeedyByte Logo" height="35" />
+              SPEEDYBYTE
+            </a>
+            <button class="navbar-toggler bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbarNav"
-            >
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="#Product-services"
-                    >Products</a
-                  >
+                  <a class="nav-link" aria-current="page" href="#Product-services">Products</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold" href="#about-us"
-                    >About Us</a
-                  >
+                  <a class="nav-link font-weight-bold" href="#about-us">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold" href="#contact-us"
-                    >Contact</a
-                  >
+                  <a class="nav-link font-weight-bold" href="#contact-us">Contact</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle font-weight-bold"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     More
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#career">Career</a></li>
                     <li>
-                      <a
-                        class="dropdown-item dropdown-link-hover-color"
-                        href="https://play.google.com/store/apps/details?id=com.speedybyte.walkthru"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        >Download the App</a
-                      >
+                      <a class="dropdown-item dropdown-link-hover-color" href="https://play.google.com/store/apps/details?id=com.speedybyte.walkthru" target="_blank" rel="noreferrer noopener">Download the App</a>
                     </li>
                     <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <button
-                        class="dropdown-item dropdown-link-hover-color text-red"
-                        id="myButton"
-                      >
+                      <button class="dropdown-item dropdown-link-hover-color text-red" id="myButton">
                         Delete WalkThru Account
                       </button>
                     </li>
@@ -135,19 +138,6 @@
           </div>
         </nav>
       </header>
-
-      <div class="video-container">
-        <video autoplay muted loop>
-          <source src="./1080.mp4" type="video/mp4" />
-          <!-- Add other video sources (WebM, Ogg) for compatibility -->
-          Your browser does not support the video tag.
-        </video>
-        <div class="overlay">
-          <h1 class="navbar-rand">
-            FROM BYTES TO BITES DELIVERED RIGHT, FAST AND FRESH IN YOUR SIGHT
-          </h1>
-        </div>
-      </div>
     </div>
 
     <!-- <nav class="navbar navbar-expand-lg bg-black">
